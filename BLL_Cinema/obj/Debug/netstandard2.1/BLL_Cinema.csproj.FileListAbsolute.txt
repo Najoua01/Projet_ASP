@@ -1,0 +1,16 @@
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\BLL_Cinema.deps.json
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\BLL_Cinema.dll
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\BLL_Cinema.pdb
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\Shared.dll
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\Shared.pdb
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.csproj.AssemblyReference.cache
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.AssemblyInfoInputs.cache
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.AssemblyInfo.cs
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.csproj.CoreCompileInputs.cache
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.csproj.CopyComplete
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.dll
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.pdb
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\DAL_Cinema.dll
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\bin\Debug\netstandard2.1\DAL_Cinema.pdb
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\BLL_Cinema\obj\Debug\netstandard2.1\BLL_Cinema.sourcelink.json
