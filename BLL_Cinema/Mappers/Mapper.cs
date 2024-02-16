@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL_Cinema.Entities;
+using DAL_Cinema.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using BLL = BLL_Cinema.Entities;
@@ -8,6 +10,7 @@ namespace BLL_Cinema.Mappers
 {
     internal static class Mapper
     {
+        #region CinemaPlace
         public static BLL.CinemaPlace ToBLL(this DAL.CinemaPlace entity)
         {
             if (entity is null) return null;
@@ -31,6 +34,9 @@ namespace BLL_Cinema.Mappers
                 Number = entity.Number
             };
         }
+        #endregion
+
+        #region CinemaRoom
         public static BLL.CinemaRoom ToBLL(this DAL.CinemaRoom entity)
         {
             if (entity is null) return null;
@@ -60,5 +66,68 @@ namespace BLL_Cinema.Mappers
                 Id_CinemaPlace = entity.Id_CinemaPlace
             };
         }
+        #endregion
+
+        #region Movie
+        public static BLL.Movie ToBll(this DAL.Movie entity)
+        {
+            if (entity is null) return null;
+            return new BLL.Movie(
+                entity.Id_Movie,
+                entity.Title,
+                entity.SubTitle,
+                entity.ReleaseYear,
+                entity.Synopsis,
+                entity.PosterUrl,
+                entity.Duration);
+        }
+
+        public static DAL.Movie ToDAL(this BLL.Movie entity)
+        {
+            if (entity is null) return null;
+            return new DAL.Movie()
+            {
+                Id_Movie = entity.Id_Movie,
+                Title = entity.Title,
+                SubTitle = entity.SubTitle,
+                ReleaseYear = entity.ReleaseYear,
+                Synopsis = entity.Synopsis,
+                PosterUrl = entity.PosterUrl,
+                Duration = entity.Duration
+            };
+        }
+        #endregion
+
+        #region Diffusion
+        public static BLL.Diffusion ToBll(this DAL.Diffusion entity)
+        {
+            if (entity is null) return null;
+            return new BLL.Diffusion(
+                entity.Id_Diffusion,
+                entity.DiffusionDate,
+                entity.DiffusionTime,
+                entity.AudioLang,
+                entity.SubTitleLang,
+                entity.Id_CinemaRoom,
+                entity.Id_Movie);
+        }
+        public static DAL.Diffusion ToDAL(this BLL.Diffusion entity)
+        {
+            if (entity is null) return null;
+            return new DAL.Diffusion()
+            {
+                Id_Diffusion = entity.Id_Diffusion,
+                DiffusionDate = entity.DiffusionDate,
+                DiffusionTime = entity.DiffusionTime,
+                AudioLang = entity.AudioLang,
+                SubTitleLang = entity.SubTitleLang,
+                Id_CinemaRoom = entity.Id_CinemaRoom,
+                Id_Movie = entity.Id_Movie
+            };
+        }
+        #endregion
+
+        #region
+        #endregion
     }
 }

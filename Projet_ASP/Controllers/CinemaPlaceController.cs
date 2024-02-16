@@ -1,7 +1,7 @@
 ﻿using BLL_Cinema.Entities;
 using BLL_Cinema.Services;
 using DAL_Cinema.Services;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http; 
 using Microsoft.AspNetCore.Mvc;
 using Projet_ASP.Handlers;
 using Projet_ASP.Models.CinemePlace;

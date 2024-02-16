@@ -25,18 +25,16 @@ namespace BLL_Cinema.Services
 
         public CinemaPlace Get(int id)
         {
-            CinemaPlace entity = _repository.Get(id).ToBLL();
-            
             return _repository.Get(id).ToBLL();
         }
-        public int Insert(CinemaPlace data)
+        public int Insert(CinemaPlace entity)
         {
-            return _repository.Insert(data.ToDAL());
+            return _repository.Insert(entity.ToDAL());
         }
 
-        public void Update(CinemaPlace data)
+        public void Update(CinemaPlace entity)
         {
-            _repository.Update(data.ToDAL());
+            _repository.Update(entity.ToDAL());
         }
 
         public void Delete(int id)

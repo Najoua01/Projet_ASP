@@ -8,7 +8,7 @@ C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstand
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.AssemblyInfoInputs.cache
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.AssemblyInfo.cs
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.csproj.CoreCompileInputs.cache
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.sourcelink.json
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.csproj.CopyComplete
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.dll
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.pdb
-C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\DAL_Cinema\obj\Debug\netstandard2.1\DAL_Cinema.sourcelink.json

@@ -35,5 +35,33 @@ namespace DAL_Cinema.Mappers
                 Id_CinemaPlace = (int)record["Id_CinemaPlace"]
             };
         }
+        public static Movie ToMovie(this IDataRecord record)
+        {
+            if (record is null) return null;
+            return new Movie()
+            {
+                Id_Movie = (int)record["Id_Movie"],
+                Title = (string)record["Title"],
+                SubTitle = (record[nameof(Movie.SubTitle)] is DBNull) ? null : (string)record[nameof(Movie.SubTitle)],
+                ReleaseYear = (short)record["ReleaseYear"],
+                Synopsis = (string)record["Synopsis"],
+                PosterUrl = (string)record["PosterUrl"],
+                Duration = (int)record["Duration"]
+            };
+        }
+        public static Diffusion ToDiffusion(this IDataRecord record)
+        {
+            if (record is null) return null;
+            return new Diffusion()
+            {
+                Id_Diffusion = (int)record["Id_Diffusion"],
+                DiffusionDate = (DateTime)record["DiffusionDate"],
+                DiffusionTime = (TimeSpan)record["DiffusionTime"],
+                AudioLang = (string)record["AudioLang"],
+                SubTitleLang = (record[nameof(Diffusion.SubTitleLang)] is DBNull) ? null : (string?)record[nameof(Diffusion.SubTitleLang)],
+                Id_CinemaRoom = (int)record["Id_CinemaRoom"],
+                Id_Movie = (int)record["Id_Movie"]
+            };
+        }
     }
 }

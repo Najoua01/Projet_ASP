@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Projet_ASP.Models.Diffusion.DiffusionListItemViewModel>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DiffusionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiffusionTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AudioLang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubTitleLang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Can3D)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Can4DX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameCinemaPlace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberCinemaRoom)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiffusionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiffusionTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AudioLang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubTitleLang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Can3D)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Can4DX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameCinemaPlace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberCinemaRoom)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

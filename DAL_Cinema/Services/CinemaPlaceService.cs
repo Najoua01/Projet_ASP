@@ -19,7 +19,7 @@ namespace DAL_Cinema.Services
 
         public IEnumerable<CinemaPlace> Get()
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -38,25 +38,25 @@ namespace DAL_Cinema.Services
         }
         public CinemaPlace Get(int id)
         {
-        using (SqlConnection connection = new SqlConnection(_connectionString))
-        {
-            using (SqlCommand command = connection.CreateCommand())
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                command.CommandText = "SP_CinemaPlace_GetById";
-                command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("Id_CinemaPlace", id);
-                connection.Open();
-                using (SqlDataReader reader = command.ExecuteReader())
+                using (SqlCommand command = connection.CreateCommand())
                 {
-                    if (reader.Read()) return reader.ToCinemaPlace();
-                    throw new ArgumentException(nameof(id), $"L'identifiant {id} n'existe pas dans la base de données.");
+                    command.CommandText = "SP_CinemaPlace_GetById";
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("Id_CinemaPlace", id);
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read()) return reader.ToCinemaPlace();
+                        throw new ArgumentException(nameof(id), $"L'identifiant {id} n'existe pas dans la base de données.");
+                    }
                 }
             }
         }
-        }
         public int Insert(CinemaPlace data)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -74,7 +74,7 @@ namespace DAL_Cinema.Services
 
         public void Update(CinemaPlace data)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -93,7 +93,7 @@ namespace DAL_Cinema.Services
         }
         public void Delete(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {

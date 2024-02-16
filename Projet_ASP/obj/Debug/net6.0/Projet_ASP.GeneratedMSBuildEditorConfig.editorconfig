@@ -38,6 +38,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hUGxhY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/CinemaRoom/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hUm9vbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/CinemaRoom/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Diffusion/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmZnVzaW9uXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Diffusion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmZnVzaW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,8 +62,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Movie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Movie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Shared/_diffusionListPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kaWZmdXNpb25MaXN0UGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/n.bouharat/source/repos/Projet_ASP_Najoua/Projet_ASP/Views/Shared/_ValidationScriptsPartial.cshtml]

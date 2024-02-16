@@ -13,5 +13,8 @@ namespace DAL_Cinema.Entities
         public string? SubTitleLang { get; set; }
         public int Id_CinemaRoom { get; set; }
         public int Id_Movie { get; set; }
+        public CinemaRoom CinemaRoom { get; set; }
+        public Movie Movie { get; set; }
+        public CinemaPlace CinemaPlace { get; set; }
     }
 }

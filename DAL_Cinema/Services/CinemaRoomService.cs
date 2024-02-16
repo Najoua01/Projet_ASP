@@ -7,18 +7,19 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Text;
 using DAL_Cinema.Mappers;
+using System.Xml.Linq;
 
 namespace DAL_Cinema.Services
 {
     public class CinemaRoomService : BaseService, ICinemaRoomRepository<CinemaRoom>
     {
-        public CinemaRoomService(IConfiguration configuration, string dbname) : base(configuration, dbname)
+        public CinemaRoomService(IConfiguration configuration) : base(configuration, "DB-Projet-Cinema")
         {
         }
 
         public void Delete(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -34,7 +35,7 @@ namespace DAL_Cinema.Services
 
         public IEnumerable<CinemaRoom> Get()
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -54,7 +55,7 @@ namespace DAL_Cinema.Services
 
         public CinemaRoom Get(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -73,7 +74,7 @@ namespace DAL_Cinema.Services
 
         public int Insert(CinemaRoom data)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -93,7 +94,7 @@ namespace DAL_Cinema.Services
 
         public void Update(CinemaRoom data)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
@@ -115,7 +116,7 @@ namespace DAL_Cinema.Services
 
         public IEnumerable<CinemaRoom> GetByCinema(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {

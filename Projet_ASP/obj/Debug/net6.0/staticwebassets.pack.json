@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\Projet_ASP.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\n.bouharat\\source\\repos\\Projet_ASP_Najoua\\Projet_ASP\\wwwroot\\assets\\images\\JurassicPark.png",
+      "PackagePath": "staticwebassets\\assets\\images\\JurassicPark.png"
+    },
+    {
+      "Id": "C:\\Users\\n.bouharat\\source\\repos\\Projet_ASP_Najoua\\Projet_ASP\\wwwroot\\assets\\images\\Lotr.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Lotr.png"
+    },
+    {
+      "Id": "C:\\Users\\n.bouharat\\source\\repos\\Projet_ASP_Najoua\\Projet_ASP\\wwwroot\\assets\\images\\Matrix.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Matrix.png"
+    },
+    {
+      "Id": "C:\\Users\\n.bouharat\\source\\repos\\Projet_ASP_Najoua\\Projet_ASP\\wwwroot\\assets\\images\\StarWars.png",
+      "PackagePath": "staticwebassets\\assets\\images\\StarWars.png"
+    },
+    {
       "Id": "C:\\Users\\n.bouharat\\source\\repos\\Projet_ASP_Najoua\\Projet_ASP\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

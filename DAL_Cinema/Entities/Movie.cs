@@ -6,7 +6,7 @@ namespace DAL_Cinema.Entities
 {
     public class Movie
     {
-        public int Id_movie { get; set; }
+        public int Id_Movie { get; set; }
         public string Title { get; set; }
         public string? SubTitle { get; set; }
         public short ReleaseYear { get; set; }

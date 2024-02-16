@@ -7,11 +7,11 @@ namespace DAL_Cinema.Services
 {
     public abstract class BaseService
     {
-        protected readonly string _connectionString;
+        protected readonly string connectionString;
 
         public BaseService(IConfiguration configuration, string dbname)
         {
-            _connectionString = configuration.GetConnectionString(dbname) ?? throw new ArgumentException(nameof(dbname));
+            connectionString = configuration.GetConnectionString(dbname);
         }
     }
 }

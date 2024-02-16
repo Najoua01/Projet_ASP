@@ -5,5 +5,6 @@ C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2.1\Shared.AssemblyInfoInputs.cache
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2.1\Shared.AssemblyInfo.cs
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2.1\Shared.csproj.CoreCompileInputs.cache
+C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2.1\Shared.sourcelink.json
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2.1\Shared.dll
 C:\Users\n.bouharat\source\repos\Projet_ASP_Najoua\Shared\obj\Debug\netstandard2.1\Shared.pdb

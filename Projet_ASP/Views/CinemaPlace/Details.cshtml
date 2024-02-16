@@ -37,5 +37,15 @@
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id_CinemaPlace }) |
-    <a asp-action="Details">Back to List</a>
+    <a asp-action="Index">Back to List</a>
 </div>
+<hr />
+<h2>@Html.DisplayNameFor(model => model.Diffusions)</h2>
+@if (Model.Diffusions.Count() > 0)
+{
+    <partial name="_diffusionListPartialView" model="Model.Diffusions"/>
+}
+else
+{
+    <p>Pas de diffusion pour ce cinema</p>   
+}
