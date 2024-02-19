@@ -11,35 +11,42 @@ namespace BLL_Cinema.Services
 {
     public class CinemaPlaceService : ICinemaPlaceRepository<CinemaPlace>
     {
-        private readonly ICinemaPlaceRepository<DAL.CinemaPlace> _repository;
+        private readonly ICinemaPlaceRepository<DAL.CinemaPlace> _cinemaPlaceRepository;
+        private readonly ICinemaRoomRepository<DAL.CinemaRoom> _cinemaRoomRepository;
+        private readonly IDiffusionRepository<DAL.Diffusion> _diffusionRepository;
 
-        public CinemaPlaceService(ICinemaPlaceRepository<DAL.CinemaPlace> repository)
+        public CinemaPlaceService(ICinemaPlaceRepository<DAL.CinemaPlace> cinemaRepository, ICinemaRoomRepository<DAL.CinemaRoom> cinemaRoomRepository, IDiffusionRepository<DAL.Diffusion> diffusionRepository)
         {
-            _repository = repository;
+            _cinemaPlaceRepository = cinemaRepository;
+            _cinemaRoomRepository = cinemaRoomRepository;
+            _diffusionRepository = diffusionRepository; 
         }
 
         public IEnumerable<CinemaPlace> Get()
         {
-            return _repository.Get().Select (d => d.ToBLL());
+            return _cinemaPlaceRepository.Get().Select (d => d.ToBLL());
         }
 
         public CinemaPlace Get(int id)
         {
-            return _repository.Get(id).ToBLL();
+            CinemaPlace entity = _cinemaPlaceRepository.Get(id).ToBLL();
+            entity.AddGroupDiffusions(_diffusionRepository.GetByCinemaPlace(id).Select(d => d.ToBll()));
+            entity.AddGroupCinemaRoom(_cinemaRoomRepository.GetByCinemaRoom(id).Select(d => d.ToBLL()));
+            return entity;
         }
         public int Insert(CinemaPlace entity)
         {
-            return _repository.Insert(entity.ToDAL());
+            return _cinemaPlaceRepository.Insert(entity.ToDAL());
         }
 
         public void Update(CinemaPlace entity)
         {
-            _repository.Update(entity.ToDAL());
+            _cinemaPlaceRepository.Update(entity.ToDAL());
         }
 
         public void Delete(int id)
         {
-            _repository.Delete(id);
+            _cinemaPlaceRepository.Delete(id);
         }
     }
 }

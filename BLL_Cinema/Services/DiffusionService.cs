@@ -32,6 +32,16 @@ namespace BLL_Cinema.Services
             return _repository.Get(id).ToBll();
         }
 
+        public IEnumerable<Diffusion> GetByCinemaPlace(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Diffusion> GetByMovie(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public int Insert(Diffusion entity)
         {
             return _repository.Insert(entity.ToDAL());

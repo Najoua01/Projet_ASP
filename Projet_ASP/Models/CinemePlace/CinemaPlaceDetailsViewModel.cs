@@ -1,4 +1,5 @@
-﻿using Projet_ASP.Models.Diffusion;
+﻿using Projet_ASP.Models.CinemaRoom;
+using Projet_ASP.Models.Diffusion;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -22,7 +23,7 @@ namespace Projet_ASP.Models.CinemePlace
         public string Number { get; set; }
 
         [DisplayName("Liste des diffusions")]
-        public List<DiffusionListItemViewModel> Diffusions { get; set; }
-
-    }
+        public IEnumerable<DiffusionListItemViewModel> Diffusions { get; set; }
+        public IEnumerable<CinemaRoomListItemViewModel> CinemaRooms { get; set; }
+    } 
 }

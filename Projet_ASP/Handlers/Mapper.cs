@@ -29,7 +29,9 @@ namespace Projet_ASP.Handlers
                 Name = entity.Name,
                 City = entity.City,
                 Street = entity.Street,
-                Number = entity.Number
+                Number = entity.Number,
+                Diffusions = entity.diffusions.Select(d => d.ToListItem()),
+                CinemaRooms = entity.cinemaRooms.Select(d => d.ToListItem())
             };
         }
         public static CinemaPlace ToBLL(this CinemaPlaceCreateForm entity)
@@ -160,10 +162,10 @@ namespace Projet_ASP.Handlers
                 NumberCinemaRoom = entity.CinemaRoom.Number
             };
         }
-        public static DiffusionListItemViewModel ToDetails(this Diffusion entity)
+        public static DiffusionDetailsViewModel ToDetails(this Diffusion entity)
         {
             if (entity is null) return null;
-            return new DiffusionListItemViewModel()
+            return new DiffusionDetailsViewModel()
             {
                 Id_Diffusion = entity.Id_Diffusion,
                 DiffusionDate = entity.DiffusionDate,

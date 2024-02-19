@@ -15,7 +15,7 @@ namespace DAL_Cinema.Services
         public DiffusionService(IConfiguration configuration) : base(configuration, "DB-Projet-Cinema")
         {
         }
-         
+
         public void Delete(int id)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -109,6 +109,48 @@ namespace DAL_Cinema.Services
                     connection.Open();
                     if (command.ExecuteNonQuery() <= 0)
                         throw new ArgumentException(nameof(data.Id_Diffusion), $"L'identifiant {data.Id_Diffusion} n'existe pas dans la base de données.");
+                }
+            }
+        }
+
+        public IEnumerable<Diffusion> GetByMovie(int id_movie)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM [Diffusion] WHERE [Id_Movie]  = @id";
+                    command.Parameters.AddWithValue("id", id_movie);
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            yield return reader.ToDiffusion();
+                        }
+                    }
+                }
+            }
+        }
+
+        public IEnumerable<Diffusion> GetByCinemaPlace(int id)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "SP_Diffusion_GetByCinemaPlace";
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("id_cinemaPlace", id);
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            yield return reader.ToDiffusion();
+                        }
+                    }
+
                 }
             }
         }

@@ -32,6 +32,11 @@ namespace BLL_Cinema.Services
             return _repository.Get(id).ToBLL();
         }
 
+        public IEnumerable<CinemaRoom> GetByCinemaRoom(int id_CinemaRoom)
+        {
+            throw new NotImplementedException();
+        }
+
         public int Insert(CinemaRoom entity)
         {
             return _repository.Insert(entity.ToDAL());

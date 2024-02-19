@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Projet_ASP.Models.Diffusion
 {
@@ -42,5 +43,12 @@ namespace Projet_ASP.Models.Diffusion
 
         [DisplayName("Numéro de la salle")]
         public int NumberCinemaRoom { get; set; }
+
+        [HiddenInput]
+        public int Id_CinemaRoom { get; set; }
+
+        [HiddenInput]
+        public int Id_Movie { get; set; }
+
     }
 }

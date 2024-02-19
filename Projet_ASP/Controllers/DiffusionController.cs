@@ -24,8 +24,8 @@ namespace Projet_ASP.Controllers
         // GET: DiffusionController/Details/5
         public ActionResult Details(int id)
         {
-            
-            return View();
+            DiffusionDetailsViewModel model = _diffusionRepository.Get(id).ToDetails();
+            return View(model);
         }
 
         // GET: DiffusionController/Create

@@ -47,5 +47,12 @@ namespace Projet_ASP.Models.Diffusion
         [DisplayName("Numéro de la salle")]
         public int NumberCinemaRoom { get; set; }
 
+        [HiddenInput]
+        [ScaffoldColumn(false)]
+        public int Id_CinemaRoom { get; set; }
+
+        [HiddenInput]
+        public int Id_Movie { get; set; }
+
     }
 }

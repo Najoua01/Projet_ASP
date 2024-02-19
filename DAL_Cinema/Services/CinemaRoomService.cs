@@ -114,7 +114,7 @@ namespace DAL_Cinema.Services
             }
         }
 
-        public IEnumerable<CinemaRoom> GetByCinema(int id)
+        public IEnumerable<CinemaRoom> GetByCinemaRoom(int id)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

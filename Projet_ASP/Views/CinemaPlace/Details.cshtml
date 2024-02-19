@@ -41,7 +41,7 @@
 </div>
 <hr />
 <h2>@Html.DisplayNameFor(model => model.Diffusions)</h2>
-@if (Model.Diffusions.Count() > 0)
+@if (Model.Diffusions != null && Model.Diffusions.Count() > 0)
 {
     <partial name="_diffusionListPartialView" model="Model.Diffusions"/>
 }
